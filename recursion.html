@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> Recursion</title>
+</head>
+<body>
+    <h2>recursion</h2>
+
+    <script>
+          function apple(x){
+            console.log(x)
+              if(x < 10)
+              apple(x+1);
+          }
+          let data = 2;
+          apple(data);
+          const factorial = (n) => {
+            if (n < 0) {
+                throw new Error('Factorial is not defined for negative numbers.');
+            }
+            if (n === 0 || n === 1) {
+                return 1;
+            }
+            return n * factorial(n - 1);
+        };
+        
+        // Example usage:
+        console.log(factorial(5)); // Output: 120
+
+
+    </script>
+
+</body>
+</html>
